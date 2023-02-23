@@ -13,6 +13,12 @@
             min-height: 150px;
         }
 
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 2px solid;
+        }
+
     </style>
 
 </head>
@@ -25,6 +31,28 @@
 <div class="container">
 
 </div>
+
+<script>
+
+    // Create shortscut references 
+    const button = document.querySelector('button');
+    const container = document.querySelector('.container');
+
+    button.addEventListener('click',(e) => {
+        for (let i = 0; i < 100; i++){
+
+        
+            // Make a box and add it to the container
+            const newBox = document.createElement('DIV');
+                console.log(newBox);
+                newBox.classList.add('box');
+                container.append(newBox);
+        }   
+    });
+        
+
+
+</script>
 
 </body>
 </html>
