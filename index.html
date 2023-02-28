@@ -5,54 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Element</title>
+    <link rel="stylesheet" href="css/style.css">
 
-    <style>
 
-        .container{
-            border: 5px solid red;
-            min-height: 150px;
-        }
-
-        .box{
-            width: 100px;
-            height: 100px;
-            border: 2px solid;
-        }
-
-    </style>
 
 </head>
 <body>
 
     <h1>Dynamically create elements with JavaScript</h1>
     
-<button>Make boxes</button>
+    <button>Make boxes</button>
 
-<div class="container">
+    <div class="container">
 
-</div>
+    </div>
 
-<script>
-
-    // Create shortscut references 
-    const button = document.querySelector('button');
-    const container = document.querySelector('.container');
-
-    button.addEventListener('click',(e) => {
-        for (let i = 0; i < 100; i++){
-
-        
-            // Make a box and add it to the container
-            const newBox = document.createElement('DIV');
-                console.log(newBox);
-                newBox.classList.add('box');
-                container.append(newBox);
-        }   
-    });
-        
-
-
-</script>
+<script src="js/main.js"></script>
 
 </body>
 </html>
