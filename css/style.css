@@ -59,3 +59,12 @@ image{
     background-repeat: no-repeat;
     background-size: 100px;
 }
+
+.link{
+    margin-bottom: 2rem;
+    color: rgb(251, 82, 82);
+    text-align: center;
+    
+    font-size: 25px;
+    font-weight: bolder;
+}
