@@ -12,7 +12,7 @@ button.addEventListener('click', makeBoxes);
 function makeBoxes () {
     const container = document.querySelector('.container');
 
-    for (let i = 0; i < 100; i++){
+    for (let i = 0; i < 35; i++){
 
         // Make a box and add it to the container
         const newBox = document.createElement('DIV');
